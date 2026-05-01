@@ -1,0 +1,224 @@
+/* ── Page shell ── */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-wrap {
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+
+/* Full-bleed banners override max-width */
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ── Section spacing ── */
+.section {
+  padding: var(--section-v) var(--gap-desktop);
+}
+
+/* ── Two-column layouts ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--gap-desktop);
+  align-items: start;
+}
+
+.two-col--reverse {
+  grid-template-columns: 3fr 2fr;
+}
+
+/* ── Three-column grid ── */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-desktop);
+}
+
+/* ── Row layouts (plan views) ── */
+.row-item {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: var(--gap-desktop);
+  align-items: center;
+  padding: var(--gap-desktop) 0;
+}
+
+.row-item + .row-item {
+  border-top: 1px solid rgba(200, 191, 177, 0.5);
+}
+
+/* ── Six-column care grid ── */
+.six-col {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+}
+
+.care-item {
+  padding: var(--gap-desktop) 16px;
+  text-align: center;
+  border-right: 1px solid rgba(200, 191, 177, 0.5);
+}
+
+.care-item:last-child {
+  border-right: none;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(200, 191, 177, 0.5);
+  margin: 0 var(--gap-desktop);
+}
+
+/* ── Eyebrow + heading block ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header .eyebrow {
+  margin-bottom: 12px;
+}
+
+/* ── Column card (sizing cols) ── */
+.col-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.col-card svg {
+  width: 100%;
+  max-width: 180px;
+}
+
+.col-card .sub-label {
+  margin-top: 4px;
+}
+
+/* ── Row card text ── */
+.row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row-text .sub-label {
+  margin-bottom: 4px;
+}
+
+/* ── Images ── */
+.section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-wrap {
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.img-wrap .section-img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+/* ── Scroll fade-in ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Tablet (640–1023px) ── */
+@media (max-width: 1023px) {
+  .two-col,
+  .two-col--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .two-col .img-wrap,
+  .two-col--reverse .img-wrap {
+    min-height: 260px;
+    order: -1;
+  }
+
+  .six-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .care-item:nth-child(3) {
+    border-right: none;
+  }
+
+  .care-item:nth-child(4) {
+    border-right: 1px solid rgba(200, 191, 177, 0.5);
+  }
+}
+
+/* ── Mobile (<640px) ── */
+@media (max-width: 639px) {
+  .section {
+    padding: var(--section-v-m) var(--gap-mobile);
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .six-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .care-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .care-item:nth-child(3) {
+    border-right: 1px solid rgba(200, 191, 177, 0.5);
+  }
+
+  .care-item:nth-child(4) {
+    border-right: none;
+  }
+
+  .row-item {
+    grid-template-columns: 1fr;
+  }
+
+  .row-item svg {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .gap-desktop {
+    gap: var(--gap-mobile);
+  }
+}

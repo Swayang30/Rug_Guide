@@ -1,0 +1,23 @@
+:root {
+  /* Colours */
+  --bg-page:     #F4EFE8;
+  --bg-card:     #FAF6F0;
+  --bg-divider:  #EDE6DB;
+  --ink-primary: #2B2A26;
+  --ink-body:    #4A4742;
+  --ink-muted:   #7A736A;
+  --accent-line: #C8BFB1;
+  --btn-bg:      #2B2A26;
+  --btn-text:    #FAF6F0;
+
+  /* Typography */
+  --font-serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-sans:  "Inter", "Work Sans", system-ui, sans-serif;
+
+  /* Spacing */
+  --page-max:   720px;
+  --section-v:  72px;
+  --section-v-m: 48px;
+  --gap-desktop: 32px;
+  --gap-mobile:  20px;
+}
