@@ -15,9 +15,9 @@
   --font-sans:  "Inter", "Work Sans", system-ui, sans-serif;
 
   /* Spacing */
-  --page-max:   720px;
-  --section-v:  72px;
-  --section-v-m: 48px;
-  --gap-desktop: 32px;
-  --gap-mobile:  20px;
+  --page-max:   800px;
+  --section-v:  108px;
+  --section-v-m: 72px;
+  --gap-desktop: 56px;
+  --gap-mobile:  32px;
 }
