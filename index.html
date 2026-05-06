@@ -79,47 +79,50 @@
         <!-- Column 1: Doormat -->
         <div class="col-card">
           <!-- SVG: Front door, plant, doormat rug -->
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Door frame -->
-            <rect x="65" y="30" width="70" height="120" rx="1"/>
-            <!-- Door panel top -->
-            <rect x="73" y="38" width="54" height="42" rx="1"/>
-            <!-- Door panel bottom -->
-            <rect x="73" y="88" width="54" height="42" rx="1"/>
+            <!-- Door outer frame -->
+            <rect x="66" y="12" width="68" height="130" rx="1"/>
+            <!-- Door surface inset -->
+            <rect x="72" y="18" width="56" height="118" rx="1"/>
+            <!-- Upper panel -->
+            <rect x="76" y="23" width="48" height="50" rx="1"/>
+            <!-- Lower panel -->
+            <rect x="76" y="79" width="48" height="51" rx="1"/>
             <!-- Doorknob -->
-            <circle cx="127" cy="111" r="3.5"/>
-            <line x1="127" y1="111" x2="127" y2="108"/>
-            <!-- Door threshold step -->
-            <line x1="62" y1="150" x2="138" y2="150"/>
-            <!-- Potted plant: pot -->
-            <path d="M38 148 L42 135 L52 135 L56 148 Z"/>
-            <!-- Pot rim -->
-            <line x1="37" y1="148" x2="57" y2="148"/>
-            <!-- Plant stems -->
-            <path d="M47 135 C47 128 42 120 38 116"/>
-            <path d="M47 135 C47 125 52 118 55 112"/>
-            <path d="M47 135 C44 126 44 120 47 114"/>
+            <circle cx="120" cy="107" r="3"/>
+            <line x1="120" y1="107" x2="120" y2="103"/>
+            <!-- Threshold step -->
+            <line x1="62" y1="142" x2="138" y2="142"/>
+            <line x1="58" y1="146" x2="142" y2="146"/>
+            <!-- Potted plant: pot trapezoid -->
+            <path d="M 32 144 L 35 128 L 52 128 L 55 144 Z"/>
+            <line x1="30" y1="144" x2="57" y2="144"/>
+            <line x1="35" y1="128" x2="52" y2="128"/>
+            <!-- Stems -->
+            <path d="M 43 128 C 43 119 37 111 32 106"/>
+            <path d="M 43 128 C 43 117 43 109 43 103"/>
+            <path d="M 43 128 C 43 118 50 110 55 105"/>
             <!-- Leaves -->
-            <ellipse cx="37" cy="113" rx="5" ry="3" transform="rotate(-30 37 113)"/>
-            <ellipse cx="56" cy="110" rx="5" ry="3" transform="rotate(20 56 110)"/>
-            <ellipse cx="47" cy="111" rx="4" ry="3" transform="rotate(-5 47 111)"/>
-            <!-- Rug -->
-            <rect x="58" y="153" width="84" height="28" rx="2" fill="rgba(200,191,177,0.18)"/>
-            <!-- Rug fringe lines -->
-            <line x1="63" y1="153" x2="63" y2="148"/>
-            <line x1="70" y1="153" x2="70" y2="148"/>
-            <line x1="77" y1="153" x2="77" y2="148"/>
-            <line x1="84" y1="153" x2="84" y2="148"/>
-            <line x1="91" y1="153" x2="91" y2="148"/>
-            <line x1="98" y1="153" x2="98" y2="148"/>
-            <line x1="105" y1="153" x2="105" y2="148"/>
-            <line x1="112" y1="153" x2="112" y2="148"/>
-            <line x1="119" y1="153" x2="119" y2="148"/>
-            <line x1="126" y1="153" x2="126" y2="148"/>
-            <line x1="133" y1="153" x2="133" y2="148"/>
+            <ellipse cx="30" cy="103" rx="8" ry="5" transform="rotate(-30 30 103)"/>
+            <ellipse cx="43" cy="99"  rx="7" ry="5"/>
+            <ellipse cx="57" cy="102" rx="8" ry="5" transform="rotate(28 57 102)"/>
+            <ellipse cx="25" cy="111" rx="6" ry="3.5" transform="rotate(-48 25 111)"/>
+            <ellipse cx="61" cy="109" rx="6" ry="3.5" transform="rotate(42 61 109)"/>
+            <!-- Doormat rug -->
+            <rect x="52" y="149" width="96" height="32" rx="2" fill="rgba(200,191,177,0.22)"/>
+            <!-- Rug inner border -->
+            <rect x="57" y="154" width="86" height="22" rx="1" stroke-opacity="0.5"/>
+            <!-- Fringe lines -->
+            <line x1="59" y1="149" x2="59" y2="144"/> <line x1="65" y1="149" x2="65" y2="144"/>
+            <line x1="71" y1="149" x2="71" y2="144"/> <line x1="77" y1="149" x2="77" y2="144"/>
+            <line x1="83" y1="149" x2="83" y2="144"/> <line x1="89" y1="149" x2="89" y2="144"/>
+            <line x1="95" y1="149" x2="95" y2="144"/> <line x1="101" y1="149" x2="101" y2="144"/>
+            <line x1="107" y1="149" x2="107" y2="144"/> <line x1="113" y1="149" x2="113" y2="144"/>
+            <line x1="119" y1="149" x2="119" y2="144"/> <line x1="125" y1="149" x2="125" y2="144"/>
+            <line x1="131" y1="149" x2="131" y2="144"/> <line x1="137" y1="149" x2="137" y2="144"/>
           </svg>
           <span class="sub-label">60 × 90 cm — Doormat</span>
           <p class="caption">A welcoming layer at your front or back door. Perfect for adding warmth and texture to entry points.</p>
@@ -127,41 +130,52 @@
 
         <!-- Column 2: Short Runner -->
         <div class="col-card">
-          <!-- SVG: Kitchen counter with sink, cabinets, runner rug -->
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          <!-- SVG: Bathroom vanity with mirror, double sink, cabinets, runner rug -->
+          <svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Counter top surface -->
-            <rect x="20" y="70" width="160" height="12" rx="1"/>
-            <!-- Counter front face -->
-            <rect x="20" y="82" width="160" height="60" rx="1"/>
-            <!-- Cabinet doors - left -->
-            <rect x="24" y="87" width="45" height="50" rx="1"/>
-            <circle cx="48" cy="112" r="2.5"/>
-            <!-- Cabinet doors - middle -->
-            <rect x="75" y="87" width="50" height="50" rx="1"/>
-            <circle cx="100" cy="112" r="2.5"/>
-            <!-- Cabinet doors - right -->
-            <rect x="131" y="87" width="45" height="50" rx="1"/>
-            <circle cx="154" cy="112" r="2.5"/>
-            <!-- Sink basins -->
-            <rect x="60" y="40" width="35" height="28" rx="3"/>
-            <rect x="100" y="40" width="35" height="28" rx="3"/>
-            <!-- Drain left -->
-            <circle cx="77" cy="54" r="5"/>
-            <line x1="77" y1="49" x2="77" y2="59"/>
-            <line x1="72" y1="54" x2="82" y2="54"/>
-            <!-- Drain right -->
-            <circle cx="117" cy="54" r="5"/>
-            <line x1="117" y1="49" x2="117" y2="59"/>
-            <line x1="112" y1="54" x2="122" y2="54"/>
-            <!-- Faucet -->
-            <line x1="97" y1="42" x2="97" y2="30"/>
-            <path d="M97 30 Q97 22 103 22"/>
-            <line x1="103" y1="22" x2="103" y2="35"/>
-            <!-- Rug -->
-            <rect x="20" y="145" width="160" height="36" rx="2" fill="rgba(200,191,177,0.18)"/>
+            <!-- Mirror frame -->
+            <rect x="28" y="10" width="144" height="46" rx="1"/>
+            <!-- Mirror inner reflection line -->
+            <rect x="33" y="15" width="134" height="36" rx="1" stroke-opacity="0.35"/>
+            <!-- Countertop surface -->
+            <rect x="16" y="58" width="168" height="10" rx="1"/>
+            <!-- Left sink basin (oval) -->
+            <ellipse cx="72" cy="43" rx="24" ry="14"/>
+            <!-- Left drain -->
+            <circle cx="72" cy="43" r="5"/>
+            <line x1="72" y1="38" x2="72" y2="48"/>
+            <line x1="67" y1="43" x2="77" y2="43"/>
+            <!-- Right sink basin (oval) -->
+            <ellipse cx="132" cy="43" rx="24" ry="14"/>
+            <!-- Right drain -->
+            <circle cx="132" cy="43" r="5"/>
+            <line x1="132" y1="38" x2="132" y2="48"/>
+            <line x1="127" y1="43" x2="137" y2="43"/>
+            <!-- Centre faucet -->
+            <line x1="102" y1="37" x2="102" y2="24"/>
+            <path d="M 102 24 Q 102 17 109 17"/>
+            <line x1="109" y1="17" x2="109" y2="30"/>
+            <line x1="96" y1="26" x2="109" y2="26"/>
+            <!-- Cabinet body -->
+            <rect x="16" y="68" width="168" height="66" rx="1"/>
+            <!-- Left door -->
+            <rect x="21" y="73" width="76" height="56" rx="1"/>
+            <!-- Left handle -->
+            <line x1="50" y1="99" x2="64" y2="99"/>
+            <!-- Right door -->
+            <rect x="103" y="73" width="76" height="56" rx="1"/>
+            <!-- Right handle -->
+            <line x1="132" y1="99" x2="146" y2="99"/>
+            <!-- Runner rug -->
+            <rect x="10" y="144" width="180" height="46" rx="2" fill="rgba(200,191,177,0.22)"/>
+            <!-- Rug inner border -->
+            <rect x="16" y="150" width="168" height="34" rx="1" stroke-opacity="0.5"/>
+            <!-- Subtle rug texture -->
+            <line x1="16" y1="159" x2="184" y2="159" stroke-opacity="0.2"/>
+            <line x1="16" y1="168" x2="184" y2="168" stroke-opacity="0.2"/>
+            <line x1="16" y1="177" x2="184" y2="177" stroke-opacity="0.2"/>
           </svg>
           <span class="sub-label">80 × 200 cm — Short Runner</span>
           <p class="caption">Ideal for kitchens or bathrooms. Place in front of a sink or vanity to soften hard surfaces and add comfort underfoot.</p>
@@ -169,32 +183,41 @@
 
         <!-- Column 3: Hallway Runner -->
         <div class="col-card">
-          <!-- SVG: Perspective hallway with runner rug -->
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          <!-- SVG: One-point perspective hallway with runner rug -->
+          <svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Floor perspective lines -->
-            <line x1="20" y1="185" x2="90" y2="95"/>
-            <line x1="180" y1="185" x2="110" y2="95"/>
-            <!-- Ceiling lines -->
-            <line x1="20" y1="40" x2="90" y2="95"/>
-            <line x1="180" y1="40" x2="110" y2="95"/>
-            <!-- Left wall -->
-            <line x1="20" y1="40" x2="20" y2="185"/>
-            <!-- Right wall -->
-            <line x1="180" y1="40" x2="180" y2="185"/>
-            <!-- Arch at end of hallway -->
-            <path d="M90 95 Q100 80 110 95"/>
-            <line x1="90" y1="95" x2="90" y2="130"/>
-            <line x1="110" y1="95" x2="110" y2="130"/>
-            <line x1="90" y1="130" x2="110" y2="130"/>
-            <!-- Baseboard left -->
-            <line x1="24" y1="185" x2="24" y2="44"/>
-            <!-- Baseboard right -->
-            <line x1="176" y1="185" x2="176" y2="44"/>
-            <!-- Runner rug in perspective -->
-            <path d="M80 185 L90 130 L110 130 L120 185 Z" fill="rgba(200,191,177,0.18)"/>
+            <!-- Vanishing point: (100, 88) -->
+            <!-- Outer walls -->
+            <line x1="12" y1="12"  x2="12"  y2="205"/>
+            <line x1="188" y1="12" x2="188" y2="205"/>
+            <!-- Ceiling -->
+            <line x1="12" y1="12"  x2="188" y2="12"/>
+            <!-- Floor -->
+            <line x1="12" y1="205" x2="188" y2="205"/>
+            <!-- Perspective: floor lines to VP -->
+            <line x1="12"  y1="205" x2="100" y2="88"/>
+            <line x1="188" y1="205" x2="100" y2="88"/>
+            <!-- Perspective: ceiling lines to VP -->
+            <line x1="12"  y1="12"  x2="100" y2="88"/>
+            <line x1="188" y1="12"  x2="100" y2="88"/>
+            <!-- Left baseboard -->
+            <line x1="19"  y1="205" x2="19"  y2="16"/>
+            <line x1="19"  y1="205" x2="100" y2="93"/>
+            <!-- Right baseboard -->
+            <line x1="181" y1="205" x2="181" y2="16"/>
+            <line x1="181" y1="205" x2="100" y2="93"/>
+            <!-- Wall wainscot / mid rail lines (perspective) -->
+            <line x1="12"  y1="120" x2="100" y2="93"/>
+            <line x1="188" y1="120" x2="100" y2="93"/>
+            <!-- End doorway -->
+            <rect x="88" y="88" width="24" height="34" rx="1"/>
+            <path d="M 88 88 Q 100 75 112 88"/>
+            <!-- Runner rug in perspective (trapezoid on floor) -->
+            <path d="M 66 205 L 88 106 L 112 106 L 134 205 Z" fill="rgba(200,191,177,0.22)"/>
+            <!-- Rug inner border in perspective -->
+            <path d="M 71 205 L 91 111 L 109 111 L 129 205 Z" stroke-opacity="0.45"/>
           </svg>
           <span class="sub-label">80 × 300 cm — Hallway Runner</span>
           <p class="caption">Designed for longer hallways or galley kitchens. Helps visually elongate the space while adding a layered, collected feel.</p>
@@ -215,32 +238,35 @@
 
       <!-- Row 1: 170×240 -->
       <div class="row-item">
-        <!-- SVG: Top-down plan view, small living -->
-        <svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg"
+        <!-- SVG: Top-down plan view, small living 170×240 -->
+        <svg viewBox="0 0 310 230" xmlns="http://www.w3.org/2000/svg"
              fill="none" stroke="var(--accent-line)"
-             stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+             stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
              aria-hidden="true">
-          <!-- Rug -->
-          <rect x="30" y="30" width="160" height="120" rx="3" fill="rgba(200,191,177,0.18)"/>
-          <!-- Sofa (bottom, facing up) -->
-          <rect x="55" y="110" width="110" height="30" rx="3"/>
-          <!-- Sofa back -->
-          <rect x="55" y="107" width="110" height="8" rx="2"/>
-          <!-- Sofa arms -->
-          <rect x="50" y="107" width="8" height="30" rx="2"/>
-          <rect x="162" y="107" width="8" height="30" rx="2"/>
-          <!-- Coffee table (center) -->
-          <rect x="78" y="72" width="64" height="34" rx="2"/>
-          <!-- Armchair (left) -->
-          <rect x="35" y="45" width="38" height="38" rx="3"/>
-          <rect x="35" y="42" width="38" height="8" rx="2"/>
-          <rect x="31" y="42" width="7" height="38" rx="2"/>
-          <rect x="69" y="42" width="7" height="38" rx="2"/>
-          <!-- Side table (right) -->
-          <rect x="147" y="48" width="28" height="28" rx="2"/>
-          <!-- Lamp circle on side table -->
-          <circle cx="161" cy="62" r="8"/>
-          <line x1="161" y1="70" x2="161" y2="76"/>
+          <!-- Rug (170×240 → scaled to fill canvas) -->
+          <rect x="20" y="18" width="270" height="194" rx="3" fill="rgba(200,191,177,0.18)"/>
+          <rect x="26" y="24" width="258" height="182" rx="2" stroke-dasharray="5 4" stroke-opacity="0.3"/>
+          <!-- Main sofa (bottom, top-down view) -->
+          <rect x="76"  y="159" width="158" height="37"  rx="4"/>
+          <rect x="76"  y="152" width="158" height="10"  rx="3"/>
+          <rect x="67"  y="152" width="12"  height="44"  rx="2"/>
+          <rect x="231" y="152" width="12"  height="44"  rx="2"/>
+          <!-- Sofa cushion dividers (3 cushions) -->
+          <line x1="129" y1="152" x2="129" y2="196"/>
+          <line x1="182" y1="152" x2="182" y2="196"/>
+          <!-- Single armchair (left) -->
+          <rect x="30"  y="80"  width="46"  height="46"  rx="3"/>
+          <rect x="30"  y="74"  width="46"  height="9"   rx="2"/>
+          <rect x="23"  y="74"  width="10"  height="51"  rx="2"/>
+          <rect x="73"  y="74"  width="10"  height="51"  rx="2"/>
+          <!-- Coffee table (oval, centre) -->
+          <ellipse cx="155" cy="123" rx="54" ry="28"/>
+          <!-- Side table with lamp (right) -->
+          <rect x="238" y="86" width="32" height="32" rx="2"/>
+          <circle cx="254" cy="102" r="10"/>
+          <!-- Small plant (bottom-left) -->
+          <circle cx="42"  cy="166" r="11"/>
+          <circle cx="48"  cy="157" r="7"/>
         </svg>
         <div class="row-text">
           <span class="sub-label">170 × 240 cm — Small Living Spaces</span>
@@ -250,33 +276,38 @@
 
       <!-- Row 2: 240×310 -->
       <div class="row-item">
-        <!-- SVG: Top-down plan view, standard living -->
-        <svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg"
+        <!-- SVG: Top-down plan view, standard living 240×310 -->
+        <svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg"
              fill="none" stroke="var(--accent-line)"
-             stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+             stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
              aria-hidden="true">
           <!-- Rug -->
-          <rect x="20" y="20" width="200" height="160" rx="3" fill="rgba(200,191,177,0.18)"/>
-          <!-- Main sofa (bottom) -->
-          <rect x="45" y="130" width="150" height="34" rx="3"/>
-          <rect x="45" y="127" width="150" height="9" rx="2"/>
-          <rect x="39" y="127" width="9" height="34" rx="2"/>
-          <rect x="192" y="127" width="9" height="34" rx="2"/>
-          <!-- Coffee table -->
-          <rect x="80" y="90" width="80" height="36" rx="2"/>
-          <!-- Armchair left -->
-          <rect x="25" y="48" width="44" height="44" rx="3"/>
-          <rect x="25" y="44" width="44" height="9" rx="2"/>
-          <rect x="20" y="44" width="8" height="44" rx="2"/>
-          <rect x="66" y="44" width="8" height="44" rx="2"/>
-          <!-- Armchair right -->
-          <rect x="171" y="48" width="44" height="44" rx="3"/>
-          <rect x="171" y="44" width="44" height="9" rx="2"/>
-          <rect x="166" y="44" width="8" height="44" rx="2"/>
-          <rect x="212" y="44" width="8" height="44" rx="2"/>
-          <!-- Side tables -->
-          <rect x="30" y="108" width="24" height="24" rx="2"/>
-          <rect x="186" y="108" width="24" height="24" rx="2"/>
+          <rect x="18" y="15" width="324" height="230" rx="3" fill="rgba(200,191,177,0.18)"/>
+          <rect x="24" y="21" width="312" height="218" rx="2" stroke-dasharray="5 4" stroke-opacity="0.3"/>
+          <!-- Main sofa (bottom, 3-seat) -->
+          <rect x="80"  y="185" width="200" height="42"  rx="4"/>
+          <rect x="80"  y="178" width="200" height="10"  rx="3"/>
+          <rect x="70"  y="178" width="13"  height="49"  rx="2"/>
+          <rect x="277" y="178" width="13"  height="49"  rx="2"/>
+          <!-- 3 cushion dividers -->
+          <line x1="147" y1="178" x2="147" y2="227"/>
+          <line x1="214" y1="178" x2="214" y2="227"/>
+          <!-- Left armchair -->
+          <rect x="26"  y="96"  width="50"  height="50"  rx="3"/>
+          <rect x="26"  y="89"  width="50"  height="10"  rx="2"/>
+          <rect x="17"  y="89"  width="12"  height="57"  rx="2"/>
+          <rect x="73"  y="89"  width="12"  height="57"  rx="2"/>
+          <!-- Right armchair -->
+          <rect x="284" y="96"  width="50"  height="50"  rx="3"/>
+          <rect x="284" y="89"  width="50"  height="10"  rx="2"/>
+          <rect x="275" y="89"  width="12"  height="57"  rx="2"/>
+          <rect x="331" y="89"  width="12"  height="57"  rx="2"/>
+          <!-- Coffee table (oval, centre) -->
+          <ellipse cx="180" cy="148" rx="68" ry="32"/>
+          <!-- Left side table -->
+          <rect x="30"  y="152" width="30"  height="30"  rx="2"/>
+          <!-- Right side table -->
+          <rect x="300" y="152" width="30"  height="30"  rx="2"/>
         </svg>
         <div class="row-text">
           <span class="sub-label">240 × 310 cm — Standard Living Spaces</span>
@@ -286,35 +317,39 @@
 
       <!-- Row 3: 275×365 -->
       <div class="row-item">
-        <!-- SVG: Top-down plan view, large living -->
-        <svg viewBox="0 0 260 210" xmlns="http://www.w3.org/2000/svg"
+        <!-- SVG: Top-down plan view, large living 275×365 -->
+        <svg viewBox="0 0 400 290" xmlns="http://www.w3.org/2000/svg"
              fill="none" stroke="var(--accent-line)"
-             stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+             stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
              aria-hidden="true">
-          <!-- Rug (generous margin around furniture) -->
-          <rect x="14" y="14" width="232" height="182" rx="3" fill="rgba(200,191,177,0.18)"/>
-          <!-- Main sofa (bottom, larger) -->
-          <rect x="40" y="140" width="180" height="38" rx="3"/>
-          <rect x="40" y="136" width="180" height="10" rx="2"/>
-          <rect x="34" y="136" width="10" height="38" rx="2"/>
-          <rect x="216" y="136" width="10" height="38" rx="2"/>
-          <!-- Coffee table (rectangular) -->
-          <rect x="85" y="95" width="90" height="40" rx="2"/>
-          <!-- Armchair left -->
-          <rect x="22" y="50" width="50" height="50" rx="3"/>
-          <rect x="22" y="46" width="50" height="10" rx="2"/>
-          <rect x="16" y="46" width="9" height="50" rx="2"/>
-          <rect x="69" y="46" width="9" height="50" rx="2"/>
-          <!-- Armchair right -->
-          <rect x="188" y="50" width="50" height="50" rx="3"/>
-          <rect x="188" y="46" width="50" height="10" rx="2"/>
-          <rect x="182" y="46" width="9" height="50" rx="2"/>
-          <rect x="235" y="46" width="9" height="50" rx="2"/>
-          <!-- Side tables -->
-          <rect x="28" y="118" width="28" height="28" rx="2"/>
-          <rect x="204" y="118" width="28" height="28" rx="2"/>
-          <!-- Rug border accent (inner) -->
-          <rect x="22" y="22" width="216" height="166" rx="2" stroke-dasharray="4 3" stroke-opacity="0.4"/>
+          <!-- Rug (largest, generous margins) -->
+          <rect x="15" y="14" width="370" height="262" rx="3" fill="rgba(200,191,177,0.18)"/>
+          <rect x="22" y="21" width="356" height="248" rx="2" stroke-dasharray="5 4" stroke-opacity="0.3"/>
+          <!-- Main sofa (bottom, 4-seat) -->
+          <rect x="74"  y="214" width="252" height="44"  rx="4"/>
+          <rect x="74"  y="207" width="252" height="10"  rx="3"/>
+          <rect x="63"  y="207" width="14"  height="51"  rx="2"/>
+          <rect x="323" y="207" width="14"  height="51"  rx="2"/>
+          <!-- 4 cushion dividers -->
+          <line x1="137" y1="207" x2="137" y2="258"/>
+          <line x1="200" y1="207" x2="200" y2="258"/>
+          <line x1="263" y1="207" x2="263" y2="258"/>
+          <!-- Left armchair -->
+          <rect x="23"  y="108" width="56"  height="56"  rx="3"/>
+          <rect x="23"  y="101" width="56"  height="10"  rx="2"/>
+          <rect x="13"  y="101" width="13"  height="63"  rx="2"/>
+          <rect x="76"  y="101" width="13"  height="63"  rx="2"/>
+          <!-- Right armchair -->
+          <rect x="321" y="108" width="56"  height="56"  rx="3"/>
+          <rect x="321" y="101" width="56"  height="10"  rx="2"/>
+          <rect x="311" y="101" width="13"  height="63"  rx="2"/>
+          <rect x="374" y="101" width="13"  height="63"  rx="2"/>
+          <!-- Coffee table (large oval, centre) -->
+          <ellipse cx="200" cy="165" rx="80" ry="36"/>
+          <!-- Left side table -->
+          <rect x="28"  y="169" width="34"  height="34"  rx="2"/>
+          <!-- Right side table -->
+          <rect x="338" y="169" width="34"  height="34"  rx="2"/>
         </svg>
         <div class="row-text">
           <span class="sub-label">275 × 365 cm — Large Spaces</span>
@@ -338,24 +373,24 @@
 
         <!-- Column 1: 4–6 seats -->
         <div class="col-card">
-          <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 180 190" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
             <!-- Rug -->
-            <rect x="18" y="18" width="144" height="144" rx="3" fill="rgba(200,191,177,0.18)"/>
-            <!-- Table -->
-            <rect x="55" y="55" width="70" height="70" rx="2"/>
-            <!-- Chairs: top row -->
-            <rect x="65" y="34" width="22" height="18" rx="2"/>
-            <rect x="93" y="34" width="22" height="18" rx="2"/>
-            <!-- Chairs: bottom row -->
-            <rect x="65" y="128" width="22" height="18" rx="2"/>
-            <rect x="93" y="128" width="22" height="18" rx="2"/>
-            <!-- Chairs: left -->
-            <rect x="34" y="72" width="18" height="22" rx="2"/>
-            <!-- Chairs: right -->
-            <rect x="128" y="72" width="18" height="22" rx="2"/>
+            <rect x="14" y="16" width="152" height="158" rx="3" fill="rgba(200,191,177,0.18)"/>
+            <!-- Dining table (rounded rectangle) -->
+            <rect x="52" y="54" width="76" height="82" rx="10"/>
+            <!-- Chairs: top (2) -->
+            <rect x="64"  y="28" width="24" height="20" rx="3"/>
+            <rect x="92"  y="28" width="24" height="20" rx="3"/>
+            <!-- Chairs: bottom (2) -->
+            <rect x="64"  y="142" width="24" height="20" rx="3"/>
+            <rect x="92"  y="142" width="24" height="20" rx="3"/>
+            <!-- Chair: left -->
+            <rect x="28"  y="78"  width="20" height="24" rx="3"/>
+            <!-- Chair: right -->
+            <rect x="132" y="78"  width="20" height="24" rx="3"/>
           </svg>
           <span class="sub-label">170 × 240 cm</span>
           <p class="caption">Suitable for smaller dining tables (4–6 seats). Chairs may sit partially off when pulled out.</p>
@@ -363,26 +398,26 @@
 
         <!-- Column 2: 6–8 seats -->
         <div class="col-card">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 200 210" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
             <!-- Rug -->
-            <rect x="14" y="14" width="172" height="172" rx="3" fill="rgba(200,191,177,0.18)"/>
-            <!-- Table -->
-            <rect x="52" y="55" width="96" height="90" rx="2"/>
-            <!-- Chairs: top row (3) -->
-            <rect x="54" y="32" width="22" height="18" rx="2"/>
-            <rect x="82" y="32" width="22" height="18" rx="2"/>
-            <rect x="110" y="32" width="22" height="18" rx="2"/>
-            <!-- Chairs: bottom row (3) -->
-            <rect x="54" y="150" width="22" height="18" rx="2"/>
-            <rect x="82" y="150" width="22" height="18" rx="2"/>
-            <rect x="110" y="150" width="22" height="18" rx="2"/>
-            <!-- Chairs: left -->
-            <rect x="30" y="88" width="18" height="24" rx="2"/>
-            <!-- Chairs: right -->
-            <rect x="152" y="88" width="18" height="24" rx="2"/>
+            <rect x="10" y="12" width="180" height="186" rx="3" fill="rgba(200,191,177,0.18)"/>
+            <!-- Dining table (rounded rectangle, longer) -->
+            <rect x="46" y="52" width="108" height="106" rx="12"/>
+            <!-- Chairs: top (3) -->
+            <rect x="52"  y="24"  width="24" height="22" rx="3"/>
+            <rect x="88"  y="24"  width="24" height="22" rx="3"/>
+            <rect x="124" y="24"  width="24" height="22" rx="3"/>
+            <!-- Chairs: bottom (3) -->
+            <rect x="52"  y="164" width="24" height="22" rx="3"/>
+            <rect x="88"  y="164" width="24" height="22" rx="3"/>
+            <rect x="124" y="164" width="24" height="22" rx="3"/>
+            <!-- Chair: left -->
+            <rect x="22"  y="88"  width="20" height="24" rx="3"/>
+            <!-- Chair: right -->
+            <rect x="158" y="88"  width="20" height="24" rx="3"/>
           </svg>
           <span class="sub-label">240 × 310 cm</span>
           <p class="caption">Ideal for 6–8 seat tables. Allows chairs to remain on the rug when in use.</p>
@@ -390,30 +425,30 @@
 
         <!-- Column 3: 8+ seats -->
         <div class="col-card">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Rug (generous margin) -->
-            <rect x="8" y="8" width="184" height="184" rx="3" fill="rgba(200,191,177,0.18)"/>
-            <!-- Table (larger) -->
-            <rect x="44" y="50" width="112" height="100" rx="2"/>
-            <!-- Chairs: top row (4) -->
-            <rect x="48" y="27" width="20" height="17" rx="2"/>
-            <rect x="74" y="27" width="20" height="17" rx="2"/>
-            <rect x="100" y="27" width="20" height="17" rx="2"/>
-            <rect x="126" y="27" width="20" height="17" rx="2"/>
-            <!-- Chairs: bottom row (4) -->
-            <rect x="48" y="156" width="20" height="17" rx="2"/>
-            <rect x="74" y="156" width="20" height="17" rx="2"/>
-            <rect x="100" y="156" width="20" height="17" rx="2"/>
-            <rect x="126" y="156" width="20" height="17" rx="2"/>
+            <!-- Rug (generous margins) -->
+            <rect x="6"  y="8"  width="188" height="204" rx="3" fill="rgba(200,191,177,0.18)"/>
+            <!-- Dining table (large oval-ended rectangle) -->
+            <rect x="36" y="46" width="128" height="128" rx="16"/>
+            <!-- Chairs: top (4) -->
+            <rect x="40"  y="18"  width="22" height="22" rx="3"/>
+            <rect x="68"  y="18"  width="22" height="22" rx="3"/>
+            <rect x="96"  y="18"  width="22" height="22" rx="3"/>
+            <rect x="124" y="18"  width="22" height="22" rx="3"/>
+            <!-- Chairs: bottom (4) -->
+            <rect x="40"  y="180" width="22" height="22" rx="3"/>
+            <rect x="68"  y="180" width="22" height="22" rx="3"/>
+            <rect x="96"  y="180" width="22" height="22" rx="3"/>
+            <rect x="124" y="180" width="22" height="22" rx="3"/>
             <!-- Chairs: left (2) -->
-            <rect x="22" y="72" width="17" height="20" rx="2"/>
-            <rect x="22" y="108" width="17" height="20" rx="2"/>
+            <rect x="12"  y="72"  width="20" height="24" rx="3"/>
+            <rect x="12"  y="124" width="20" height="24" rx="3"/>
             <!-- Chairs: right (2) -->
-            <rect x="161" y="72" width="17" height="20" rx="2"/>
-            <rect x="161" y="108" width="17" height="20" rx="2"/>
+            <rect x="168" y="72"  width="20" height="24" rx="3"/>
+            <rect x="168" y="124" width="20" height="24" rx="3"/>
           </svg>
           <span class="sub-label">275 × 365 cm</span>
           <p class="caption">Perfect for larger tables (8+ seats). Ensures ample space for movement while maintaining proportion.</p>
@@ -470,25 +505,24 @@
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Vacuum body -->
+            <!-- Handle curve -->
+            <path d="M 32 10 Q 42 10 42 18"/>
+            <!-- Body -->
             <rect x="22" y="10" width="20" height="28" rx="4"/>
-            <!-- Suction head -->
-            <rect x="14" y="38" width="36" height="10" rx="2"/>
-            <!-- Nozzle -->
-            <line x1="22" y1="48" x2="18" y2="54"/>
-            <line x1="42" y1="48" x2="46" y2="54"/>
-            <line x1="18" y1="54" x2="46" y2="54"/>
-            <!-- Handle -->
-            <line x1="32" y1="10" x2="32" y2="4"/>
-            <path d="M32 4 Q40 4 40 10"/>
-            <!-- Detail line on body -->
+            <!-- Body detail lines -->
             <line x1="26" y1="18" x2="38" y2="18"/>
             <line x1="26" y1="24" x2="38" y2="24"/>
+            <!-- Suction head -->
+            <rect x="13" y="37" width="38" height="10" rx="3"/>
+            <!-- Nozzle base -->
+            <line x1="19" y1="47" x2="15" y2="54"/>
+            <line x1="43" y1="47" x2="47" y2="54"/>
+            <line x1="15" y1="54" x2="47" y2="54"/>
             <!-- Wheels -->
-            <circle cx="24" cy="53" r="3"/>
-            <circle cx="40" cy="53" r="3"/>
+            <circle cx="22" cy="54" r="3.5"/>
+            <circle cx="42" cy="54" r="3.5"/>
           </svg>
           <span class="sub-label">1. Regular Cleaning</span>
           <p class="caption">Vacuum regularly to remove dirt and debris.</p>
@@ -498,47 +532,49 @@
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
             <!-- Bottle body -->
-            <path d="M20 28 L20 56 Q20 58 22 58 L38 58 Q40 58 40 56 L40 28 Z"/>
-            <!-- Shoulder -->
-            <path d="M20 28 Q20 22 26 20 L26 16"/>
-            <!-- Nozzle tube vertical -->
-            <line x1="26" y1="16" x2="26" y2="10"/>
+            <path d="M 21 29 L 21 58 Q 21 60 23 60 L 41 60 Q 43 60 43 58 L 43 29 Z"/>
+            <!-- Bottle shoulder to pump -->
+            <path d="M 21 29 Q 21 22 27 20 L 27 15"/>
+            <!-- Pump tube -->
+            <line x1="27" y1="15" x2="27" y2="9"/>
+            <!-- Nozzle horizontal -->
+            <line x1="27" y1="9" x2="19" y2="9"/>
             <!-- Trigger -->
-            <path d="M26 16 Q32 14 36 18 L34 24 Q30 26 26 24"/>
-            <!-- Nozzle tip -->
-            <line x1="26" y1="10" x2="20" y2="10"/>
-            <!-- Spray dots -->
-            <circle cx="14" cy="8" r="1.2"/>
-            <circle cx="11" cy="12" r="1.2"/>
-            <circle cx="8" cy="7" r="1.2"/>
-            <!-- Label line on body -->
-            <line x1="24" y1="38" x2="36" y2="38"/>
+            <path d="M 27 17 Q 35 14 38 19 L 36 25 Q 32 27 27 25"/>
+            <!-- Label lines on bottle -->
+            <line x1="25" y1="39" x2="39" y2="39"/>
+            <line x1="25" y1="45" x2="39" y2="45"/>
+            <!-- Spray particles -->
+            <circle cx="13" cy="7"  r="1.5"/>
+            <circle cx="10" cy="12" r="1.5"/>
+            <circle cx="6"  cy="8"  r="1.5"/>
           </svg>
           <span class="sub-label">2. Spot Cleaning</span>
           <p class="caption">Clean spills promptly using mild detergent and water.</p>
         </div>
 
-        <!-- 3. Shower head -->
+        <!-- 3. Shower / hose head -->
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Shower arm pipe -->
-            <line x1="22" y1="8" x2="40" y2="22"/>
-            <!-- Shower head body -->
-            <ellipse cx="44" cy="26" rx="10" ry="7" transform="rotate(35 44 26)"/>
-            <!-- Water droplets -->
-            <line x1="30" y1="38" x2="28" y2="46"/>
-            <line x1="36" y1="40" x2="34" y2="48"/>
-            <line x1="42" y1="38" x2="40" y2="46"/>
-            <line x1="26" y1="42" x2="24" y2="50"/>
-            <line x1="48" y1="36" x2="46" y2="44"/>
             <!-- Wall mount -->
-            <circle cx="20" cy="7" r="3"/>
+            <circle cx="10" cy="9" r="4"/>
+            <!-- Arm pipe -->
+            <line x1="10" y1="9" x2="30" y2="23"/>
+            <!-- Shower head body (oval at angle) -->
+            <ellipse cx="38" cy="28" rx="12" ry="7" transform="rotate(35 38 28)"/>
+            <!-- Water drops -->
+            <line x1="24" y1="40" x2="22" y2="50"/>
+            <line x1="30" y1="42" x2="28" y2="52"/>
+            <line x1="36" y1="41" x2="34" y2="51"/>
+            <line x1="42" y1="39" x2="40" y2="49"/>
+            <line x1="48" y1="36" x2="46" y2="46"/>
+            <line x1="18" y1="44" x2="16" y2="54"/>
           </svg>
           <span class="sub-label">3. Deep Cleaning</span>
           <p class="caption">For a more thorough clean, hose down outdoors and allow to air dry completely.</p>
@@ -548,14 +584,15 @@
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Cloud shape -->
-            <path d="M14 34 Q8 34 8 27 Q8 20 16 20 Q17 12 26 12 Q34 12 36 20 Q42 20 42 27 Q42 34 36 34 Z"/>
-            <!-- Rain drops -->
-            <line x1="18" y1="40" x2="16" y2="48"/>
-            <line x1="26" y1="42" x2="24" y2="52"/>
-            <line x1="34" y1="40" x2="32" y2="48"/>
+            <!-- Cloud outline -->
+            <path d="M 10 36 Q 4 36 4 28 Q 4 20 13 20 Q 14 11 24 10 Q 34 9 37 18 Q 46 18 46 27 Q 46 36 37 36 Z"/>
+            <!-- Rain drops (angled) -->
+            <line x1="14" y1="42" x2="12" y2="54"/>
+            <line x1="22" y1="44" x2="20" y2="56"/>
+            <line x1="30" y1="43" x2="28" y2="55"/>
+            <line x1="38" y1="41" x2="36" y2="53"/>
           </svg>
           <span class="sub-label">4. Outdoor Care</span>
           <p class="caption">Avoid prolonged exposure to heavy rain. Ensure rugs are placed in covered areas where possible.</p>
@@ -565,16 +602,16 @@
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Circular arrow: top arc (clockwise) -->
-            <path d="M20 22 Q32 10 44 22"/>
-            <!-- Arrow head top right -->
-            <polyline points="44,16 44,22 38,22"/>
-            <!-- Circular arrow: bottom arc -->
-            <path d="M44 42 Q32 54 20 42"/>
-            <!-- Arrow head bottom left -->
-            <polyline points="20,48 20,42 26,42"/>
+            <!-- Top arc (clockwise) -->
+            <path d="M 18 23 Q 32 8 46 23"/>
+            <!-- Arrowhead top-right -->
+            <polyline points="46,16 46,23 39,23"/>
+            <!-- Bottom arc (anti-clockwise return) -->
+            <path d="M 46 41 Q 32 56 18 41"/>
+            <!-- Arrowhead bottom-left -->
+            <polyline points="18,48 18,41 25,41"/>
           </svg>
           <span class="sub-label">5. Rotation</span>
           <p class="caption">Rotate periodically to ensure even wear, particularly in high-traffic areas.</p>
@@ -584,19 +621,19 @@
         <div class="care-item">
           <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                fill="none" stroke="var(--accent-line)"
-               stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
                aria-hidden="true">
-            <!-- Rug roll body (cylinder side) -->
-            <rect x="10" y="26" width="40" height="20" rx="1"/>
-            <!-- End cap ellipse -->
-            <ellipse cx="50" cy="36" rx="4" ry="10"/>
-            <!-- Roll curl detail at open end -->
-            <path d="M10 26 Q6 30 6 36 Q6 42 10 46"/>
-            <!-- Rug texture lines on body -->
-            <line x1="18" y1="26" x2="18" y2="46"/>
-            <line x1="26" y1="26" x2="26" y2="46"/>
-            <line x1="34" y1="26" x2="34" y2="46"/>
-            <line x1="42" y1="26" x2="42" y2="46"/>
+            <!-- Cylinder body (side face) -->
+            <rect x="8" y="25" width="44" height="22" rx="1"/>
+            <!-- Right end cap (circular cross-section) -->
+            <ellipse cx="52" cy="36" rx="5" ry="11"/>
+            <!-- Left open-end curl -->
+            <path d="M 8 25 Q 3 29 3 36 Q 3 43 8 47"/>
+            <!-- Rug layer stripes on body -->
+            <line x1="16" y1="25" x2="16" y2="47"/>
+            <line x1="24" y1="25" x2="24" y2="47"/>
+            <line x1="32" y1="25" x2="32" y2="47"/>
+            <line x1="40" y1="25" x2="40" y2="47"/>
           </svg>
           <span class="sub-label">6. Storage</span>
           <p class="caption">If storing, ensure the rug is completely dry before rolling and placing in a cool, dry space.</p>

@@ -2,20 +2,19 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .page-wrap {
   width: 100%;
   max-width: var(--page-max);
   margin: 0 auto;
+  padding: 0 48px;
 }
 
 /* Full-bleed banners override max-width */
@@ -26,8 +25,7 @@ main {
 
 /* ── Section spacing ── */
 .section {
-  padding: var(--section-v) var(--gap-desktop);
-  margin-bottom: 32px;
+  padding: var(--section-v) 0;
 }
 
 /* ── Two-column layouts ── */
@@ -46,36 +44,33 @@ main {
 .three-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--gap-desktop) var(--gap-desktop);
+  gap: 0 var(--gap-desktop);
 }
 
 /* ── Row layouts (plan views) ── */
 .row-item {
   display: grid;
-  grid-template-columns: 45fr 55fr;
+  grid-template-columns: 55fr 45fr;
   gap: var(--gap-desktop);
   align-items: center;
-  padding: 56px 0;
-  margin-bottom: 32px;
+  padding: 40px 0;
 }
 
 .row-item + .row-item {
   border-top: 1px solid rgba(200, 191, 177, 0.3);
-  padding-top: 56px;
 }
 
 /* ── Six-column care grid ── */
 .six-col {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 40px 0;
+  gap: 0;
 }
 
 .care-item {
   padding: var(--gap-desktop) 16px;
   text-align: center;
   border-right: 1px solid rgba(200, 191, 177, 0.3);
-  margin-bottom: 24px;
   transition: transform 240ms ease;
 }
 
@@ -91,17 +86,13 @@ main {
 .divider {
   border: none;
   border-top: 1px solid rgba(200, 191, 177, 0.25);
-  margin: 40px var(--gap-desktop);
+  margin: 0;
 }
 
 /* ── Eyebrow + heading block ── */
 .section-header {
   text-align: center;
-  margin-bottom: 72px;
-}
-
-.section-header .eyebrow {
-  margin-bottom: 16px;
+  margin-bottom: 56px;
 }
 
 /* ── Column card (sizing cols) ── */
@@ -110,38 +101,36 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
-  padding: 8px;
+  gap: 12px;
+  padding: 8px 16px;
 }
 
 .col-card svg {
   width: 100%;
-  max-width: 240px;
-  height: auto;
-  margin-bottom: 20px;
+  max-width: 180px;
+  height: 160px;
 }
 
 .col-card .sub-label {
-  margin-top: 8px;
-  margin-bottom: 14px;
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 /* ── Row card text ── */
 .row-text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .row-text .sub-label {
-  margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 
 .row-text p {
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 /* ── Images ── */
@@ -154,16 +143,16 @@ main {
 
 .img-wrap {
   overflow: hidden;
-  min-height: 400px;
-  border-radius: 8px;
+  min-height: 380px;
+  border-radius: 6px;
 }
 
 .img-wrap .section-img {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  min-height: 380px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 /* ── Scroll fade-in ── */
@@ -171,7 +160,6 @@ main {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 700ms ease-out, transform 700ms ease-out;
-  margin-bottom: 32px;
 }
 
 .reveal.visible {
@@ -181,6 +169,8 @@ main {
 
 /* ── Tablet (640–1023px) ── */
 @media (max-width: 1023px) {
+  .page-wrap { padding: 0 32px; }
+
   .two-col,
   .two-col--reverse {
     grid-template-columns: 1fr;
@@ -207,13 +197,15 @@ main {
 
 /* ── Mobile (<640px) ── */
 @media (max-width: 639px) {
+  .page-wrap { padding: 0 20px; }
+
   .section {
-    padding: var(--section-v-m) var(--gap-mobile);
+    padding: var(--section-v-m) 0;
   }
 
   .three-col {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .six-col {
@@ -237,11 +229,7 @@ main {
   }
 
   .row-item svg {
-    max-width: 240px;
+    max-width: 220px;
     margin: 0 auto;
-  }
-
-  .gap-desktop {
-    gap: var(--gap-mobile);
   }
 }
